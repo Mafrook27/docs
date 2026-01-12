@@ -1,28 +1,27 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import AppLayout from "./layout/AppLayout";
-import { NotFoundPage } from "./pages/NotFoundPage";
+import SimpleLayout from "./layout/SimpleLayout";
 
-// Feature routes
-import { authRoutes } from "@/features/auth/routes";
-import { dashboardRoutes } from "@/features/dashboard/routes";
+// Guide pages
+import PWAAppGuide from "./pages/PWA_app_guide_v2";
+import PortalGuide from "./pages/portal_visual_guide";
 
 const router = createBrowserRouter([
-  // Auth routes (login)
-  authRoutes,
-
-  // Protected Area
   {
-    element: <AppLayout />,
+    element: <SimpleLayout />,
     children: [
-      // Feature routes
-      dashboardRoutes,
+      {
+        path: "/",
+        element: <PWAAppGuide />,
+      },
+      {
+        path: "/guides/pwa-app",
+        element: <PWAAppGuide />,
+      },
+      {
+        path: "/guides/portal",
+        element: <PortalGuide />,
+      },
     ],
-  },
-
-  // 404 Catch-all route - MUST be last
-  {
-    path: "*",
-    element: <NotFoundPage />,
   },
 ]);
 
