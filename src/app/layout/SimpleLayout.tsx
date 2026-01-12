@@ -14,11 +14,12 @@ export default function SimpleLayout() {
             <nav className="bg-white shadow-md sticky top-0 z-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-16">
-                        {/* Logo/Brand */}
                         <div className="flex items-center">
-                            <h1 className="text-lg sm:text-xl font-bold text-blue-600">
-                                Cashback Loans Guides
-                            </h1>
+                            <img
+                                src="/logo.png"
+                                alt="Cashback Loans"
+                                className="h-8 sm:h-10 w-auto"
+                            />
                         </div>
 
                         {/* Desktop Navigation */}
@@ -26,8 +27,8 @@ export default function SimpleLayout() {
                             <Link
                                 to="/guides/pwa-app"
                                 className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${isActive("/guides/pwa-app") || isActive("/")
-                                        ? "bg-blue-600 text-white"
-                                        : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                                    ? "bg-blue-600 text-white"
+                                    : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                                     }`}
                             >
                                 <Smartphone className="w-5 h-5" />
@@ -36,8 +37,8 @@ export default function SimpleLayout() {
                             <Link
                                 to="/guides/portal"
                                 className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${isActive("/guides/portal")
-                                        ? "bg-blue-600 text-white"
-                                        : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                                    ? "bg-blue-600 text-white"
+                                    : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                                     }`}
                             >
                                 <FileText className="w-5 h-5" />
@@ -67,8 +68,8 @@ export default function SimpleLayout() {
                                     to="/guides/pwa-app"
                                     onClick={() => setMobileMenuOpen(false)}
                                     className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${isActive("/guides/pwa-app") || isActive("/")
-                                            ? "bg-blue-600 text-white"
-                                            : "text-gray-700 hover:bg-blue-50"
+                                        ? "bg-blue-600 text-white"
+                                        : "text-gray-700 hover:bg-blue-50"
                                         }`}
                                 >
                                     <Smartphone className="w-5 h-5" />
@@ -78,8 +79,8 @@ export default function SimpleLayout() {
                                     to="/guides/portal"
                                     onClick={() => setMobileMenuOpen(false)}
                                     className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${isActive("/guides/portal")
-                                            ? "bg-blue-600 text-white"
-                                            : "text-gray-700 hover:bg-blue-50"
+                                        ? "bg-blue-600 text-white"
+                                        : "text-gray-700 hover:bg-blue-50"
                                         }`}
                                 >
                                     <FileText className="w-5 h-5" />
