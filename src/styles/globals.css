@@ -415,3 +415,37 @@ svg:focus-visible {
 .recharts-wrapper *:focus-visible {
   outline: none !important;
 }
+.bg-blue-600 {
+  background-color: #476f66 !important;
+}
+.border-blue-500 {
+    border-color: #476f66 !important;
+}
+.text-green {
+	color: #476f66 !important;
+}
+button{
+  background: #476f66 !important;
+}
+.text-base {
+	font-size: 17px;
+	margin-bottom: 6px;
+}
+.wid-100{
+  width: 100%;
+}
+.text-gray-700,.text-gray-800 {
+	color: #000;
+}
+@media (max-width: 768px) {
+.w-20 {
+    width: calc(var(--spacing) * 10);
+}
+.h-20 {
+    height: calc(var(--spacing) * 10);
+}
+a {
+	word-wrap: break-word;
+  font-size: 16px;
+}
+}

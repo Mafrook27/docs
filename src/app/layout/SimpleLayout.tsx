@@ -16,7 +16,7 @@ export default function SimpleLayout() {
                     <div className="flex justify-between items-center h-16">
                         <div className="flex items-center">
                             <img
-                                src="/logo.png"
+                                src="./logo.png"
                                 alt="Cashback Loans"
                                 className="h-8 sm:h-10 w-auto"
                             />
@@ -25,8 +25,8 @@ export default function SimpleLayout() {
                         {/* Desktop Navigation */}
                         <div className="hidden md:flex gap-2">
                             <Link
-                                to="/guides/pwa-app"
-                                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${isActive("/guides/pwa-app") || isActive("/")
+                                to="/pwa-app"
+                                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${isActive("/pwa-app") || isActive("/")
                                     ? "bg-blue-600 text-white"
                                     : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                                     }`}
@@ -35,8 +35,8 @@ export default function SimpleLayout() {
                                 <span>PWA App Guide</span>
                             </Link>
                             <Link
-                                to="/guides/portal"
-                                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${isActive("/guides/portal")
+                                to="/portal"
+                                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${isActive("/portal")
                                     ? "bg-blue-600 text-white"
                                     : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                                     }`}
@@ -65,9 +65,9 @@ export default function SimpleLayout() {
                         <div className="md:hidden py-4 border-t border-gray-200">
                             <div className="flex flex-col gap-2">
                                 <Link
-                                    to="/guides/pwa-app"
+                                    to="/pwa-app"
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${isActive("/guides/pwa-app") || isActive("/")
+                                    className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${isActive("/pwa-app") || isActive("/")
                                         ? "bg-blue-600 text-white"
                                         : "text-gray-700 hover:bg-blue-50"
                                         }`}
@@ -76,9 +76,9 @@ export default function SimpleLayout() {
                                     <span className="font-medium">PWA App Guide</span>
                                 </Link>
                                 <Link
-                                    to="/guides/portal"
+                                    to="/portal"
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${isActive("/guides/portal")
+                                    className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${isActive("/portal")
                                         ? "bg-blue-600 text-white"
                                         : "text-gray-700 hover:bg-blue-50"
                                         }`}

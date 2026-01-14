@@ -495,7 +495,7 @@ export default function MobileAppGuide() {
 
       <div className="bg-yellow-100 border-2 border-yellow-500 rounded-lg p-6 text-center print:hidden">
         <p className="text-xl font-bold mb-2">Need Help Right Now?</p>
-        <p className="text-2xl font-bold text-blue-600 mb-1">Call: 1-800-XXX-XXXX</p>
+        <p className="text-2xl font-bold text-blue-600 mb-1">Call: <a href="tel:9094830474" className="text-green">(909)-483-0474</a></p>
         <p className="text-lg">Or use Live Chat in the app!</p>
       </div>
     </div>

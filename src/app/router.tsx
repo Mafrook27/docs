@@ -14,15 +14,17 @@ const router = createBrowserRouter([
         element: <PWAAppGuide />,
       },
       {
-        path: "/guides/pwa-app",
+        path: "/pwa-app",
         element: <PWAAppGuide />,
       },
       {
-        path: "/guides/portal",
+        path: "/portal",
         element: <PortalGuide />,
       },
     ],
   },
-]);
+], {
+  basename: "/guides"
+});
 
 export const AppRouter = () => <RouterProvider router={router} />;

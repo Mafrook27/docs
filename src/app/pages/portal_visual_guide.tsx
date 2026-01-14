@@ -45,24 +45,24 @@ export default function PortalGuide() {
       title: "Step 1: Getting to the Website",
       content: (
         <div className="space-y-6">
-          <div className="bg-yellow-50 border-2 border-yellow-400 rounded-lg p-6">
+          <div className="bg-yellow-50 border-4 border-yellow-400 rounded-lg p-6">
             <p className="text-xl font-bold mb-3">Open your web browser</p>
             <p className="text-lg mb-4">Look for one of these icons on your computer or tablet:</p>
             <div className="flex gap-6 justify-center my-6">
               <div className="text-center">
-                <div className="w-20 h-20 bg-blue-500 rounded-full mx-auto mb-2 flex items-center justify-center text-white text-3xl font-bold">e</div>
+                <div className="w-20 h-20  rounded-full mx-auto mb-2 flex items-center justify-center"><img src="./microsoft-edge.png" /></div>
                 <p className="text-base">Edge</p>
               </div>
               <div className="text-center">
-                <div className="w-20 h-20 bg-red-500 rounded-full mx-auto mb-2 flex items-center justify-center text-white text-3xl font-bold">C</div>
+                <div className="w-20 h-20  rounded-full mx-auto mb-2 flex items-center justify-center"><img src="./chrome.png" /></div>
                 <p className="text-base">Chrome</p>
               </div>
               <div className="text-center">
-                <div className="w-20 h-20 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center text-white text-3xl font-bold">F</div>
+                <div className="w-20 h-20  rounded-full mx-auto mb-2 flex items-center justify-center"><img src="./firefox.png" /></div>
                 <p className="text-base">Firefox</p>
               </div>
               <div className="text-center">
-                <div className="w-20 h-20 bg-blue-400 rounded-full mx-auto mb-2 flex items-center justify-center text-white text-3xl font-bold">S</div>
+                <div className="w-20 h-20  rounded-full mx-auto mb-2 flex items-center justify-center"><img src="./safari.png" /></div>
                 <p className="text-base">Safari</p>
               </div>
             </div>
@@ -73,19 +73,22 @@ export default function PortalGuide() {
             <div className="bg-green-50 border-2 border-green-500 rounded-lg p-4 mb-4">
               <p className="text-lg font-bold mb-2">Option 1: Start from the main website</p>
               <div className="bg-white border-2 border-gray-400 rounded p-4 text-center mb-3">
-                <p className="text-2xl font-mono font-bold">www.cashbackloans.com</p>
+                <p className="text-2xl font-mono font-bold"><a href="https://www.cashbackloans.com/" target="_blank">www.cashbackloans.com</a></p>
               </div>
-              <p className="text-lg">Then click "Login / My Account" button</p>
+              <p className="text-lg mb-2">Then click <strong>"My Account"</strong> button</p>
+              <div className="border-2 border-gray-400 rounded">
+                  <img className="wid-100" src="./my-account.jpg" />
+              </div>
             </div>
 
             <div className="bg-blue-50 border-2 border-blue-500 rounded-lg p-4">
               <p className="text-lg font-bold mb-2">Option 2: Go directly to login page (Faster!)</p>
               <div className="bg-white border-2 border-gray-400 rounded p-4 text-center">
-                <p className="text-xl font-mono font-bold">https://my.cashbackloans.com/#/login</p>
+                <p className="text-xl font-mono font-bold"><a href="https://my.cashbackloans.com/" target="_blank">my.cashbackloans.com</a></p>
               </div>
             </div>
             
-            <p className="text-lg mt-4 text-gray-700 font-semibold">Press ENTER on your keyboard after typing the address</p>
+            <p className="text-lg mt-4 text-gray-700 font-semibold">Press <strong>ENTER</strong> on your keyboard after typing the address</p>
           </div>
         </div>
       )
@@ -94,26 +97,8 @@ export default function PortalGuide() {
       title: "Step 2: Logging Into Your Account",
       content: (
         <div className="space-y-6">
-          <div className="bg-white border-4 border-green-500 rounded-lg p-6">
-            <p className="text-2xl font-bold mb-4 text-green-800">Enter Your Login Information</p>
-            <div className="space-y-4 bg-gray-50 p-6 rounded border-2 border-gray-300">
-              <div>
-                <label className="block text-xl font-bold mb-2">Email Address:</label>
-                <div className="bg-white border-2 border-gray-400 rounded p-3 text-lg text-gray-500">
-                  your.email@example.com
-                </div>
-                <p className="text-base text-gray-600 mt-1">Use the email address you gave us</p>
-              </div>
-              <div>
-                <label className="block text-xl font-bold mb-2">Password:</label>
-                <div className="bg-white border-2 border-gray-400 rounded p-3 text-lg text-gray-500">
-                  ••••••••
-                </div>
-              </div>
-              <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-xl font-bold w-full mt-4">
-                Login
-              </button>
-            </div>
+          <div className="bg-white border-4 border-green-500 rounded-lg p-4">
+              <img className="wid-100" src="./login.jpg" />
           </div>
 
           <div className="bg-yellow-50 border-4 border-yellow-500 rounded-lg p-6">
@@ -135,44 +120,25 @@ export default function PortalGuide() {
             <p className="text-lg mb-4">If your password has expired, you'll see a screen asking you to update your account information.</p>
             
             <div className="bg-white rounded-lg p-5 border-2 border-purple-300 mb-4">
-              <p className="text-xl font-bold mb-3">What You'll See:</p>
-              <div className="bg-gray-100 border-2 border-gray-400 rounded p-4 mb-3">
-                <p className="text-lg mb-2">Update Account Information</p>
-                <p className="text-base text-gray-600">Please update your password</p>
-              </div>
-              <p className="text-lg">Click the button to continue</p>
+                <img className="wid-100" src="./reset.jpg" />
+                <p className="text-lg mt-2">Click the <strong>Reset Password</strong> button to continue</p>
             </div>
 
-            <div className="bg-white rounded-lg p-5 border-2 border-purple-300">
-              <p className="text-xl font-bold mb-3">Create Your New Password:</p>
-              <div className="space-y-3 bg-gray-50 p-4 rounded">
-                <div>
-                  <label className="block text-lg font-semibold mb-1">Old Password:</label>
-                  <div className="bg-white border-2 border-gray-400 rounded p-2 text-gray-500">
-                    (Last 4 of your SSN)
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-lg font-semibold mb-1">New Password:</label>
-                  <div className="bg-white border-2 border-gray-400 rounded p-2 text-gray-500">
-                    (Create a password you'll remember)
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-lg font-semibold mb-1">Confirm New Password:</label>
-                  <div className="bg-white border-2 border-gray-400 rounded p-2 text-gray-500">
-                    (Type it again)
-                  </div>
-                </div>
-              </div>
-              <button className="bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-bold mt-4 w-full">
-                Update Password
-              </button>
-            </div>
-
-            <div className="bg-green-100 border-2 border-green-500 rounded-lg p-4 mt-4">
+            <div className="bg-green-100 border-2 border-green-500 rounded-lg p-4 mb-4">
               <p className="text-lg font-semibold">✓ Write down your new password and keep it in a safe place!</p>
             </div>
+
+             <div className="bg-white rounded-lg p-5 border-2 border-purple-300 mb-4">
+                <p className="text-lg mb-4">After successfull authentication you will receive a <strong>One Time Password</strong> to your registered cell number.</p>   
+                <img className="wid-100 border-2 border-gray-400 rounded mb-2" src="./verification-code.jpg" />
+                <p className="text-lg mt-4">Click the <strong>Verify</strong> button after entering the <strong>One Time Password</strong>.</p>            
+            </div>
+            
+             <div className="bg-white rounded-lg p-5 border-2 border-purple-300">
+                <p className="text-lg mb-2">If your account is already active in any device, you will see the below alert. </p>      
+                <img className="wid-100 border-2 border-gray-400 rounded mb-2" src="./security-alert.jpg" />
+                <p className="text-lg mt-2">Click <strong>Continue</strong> button if you recognize the device or click <strong>I don't recognize the device</strong>.</p>            
+             </div>
           </div>
         </div>
       )
@@ -185,28 +151,31 @@ export default function PortalGuide() {
             <p className="text-2xl font-bold mb-4 text-blue-900">Once You're Logged In:</p>
             
             <div className="bg-white rounded-lg p-5 border-2 border-blue-300 mb-4">
-              <p className="text-xl font-bold mb-3">Step 1: Find "Manage Your Loan Account" Section</p>
-              <p className="text-lg mb-3">Look for the button that says:</p>
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-bold">
-                I want to apply for a new loan
-              </button>
+              <p className="text-xl font-bold mb-3">Step 1: Find "I want apply for a new loan” button</p>
+              <div>
+                <img className="wid-100 border-2 border-gray-400 rounded mb-2" src="./apply-new-loan.jpg" />
+                <p className="text-lg mt-4">Click the <strong>I want apply for a new loan</strong> button to continue.</p>            
+              </div>
             </div>
             
             <div className="bg-white rounded-lg p-5 border-2 border-blue-300 mb-4">
               <p className="text-xl font-bold mb-3">Step 2: Select Your Loan Amount</p>
               <p className="text-lg mb-3">Choose the amount you need from the dropdown menu</p>
-              <div className="bg-gray-50 border-2 border-gray-300 rounded p-3 text-lg">
-                Select Loan Amount: $_____ ▼
+              <div>
+                <img className="wid-100 border-2 border-gray-400 rounded mb-2" src="./select-loan.jpg" />
+                <p className="text-lg mt-4">After selecting the loan amount click the <strong>submit</strong> button and you will see the loan amount confirmation screen.</p>            
               </div>
             </div>
             
             <div className="bg-white rounded-lg p-5 border-2 border-blue-300 mb-4">
               <p className="text-xl font-bold mb-3">Step 3: Submit Your Application</p>
-              <p className="text-lg mb-2">Click the Submit button</p>
-              <button className="bg-green-600 text-white px-6 py-3 rounded-lg text-lg font-bold">
-                Submit
-              </button>
-              <p className="text-lg mt-3">You'll see a confirmation pop-up - click to confirm</p>
+              <p className="text-lg mb-2">Click the <strong>Yes, Submit!</strong> button</p>
+              <div>
+                <img className="wid-100 border-2 border-gray-400 rounded mb-2" src="./submit-screen.jpg" />
+                <p className="text-lg mt-4 mb-4">You will see the below screen if your <strong>loan is approved</strong>. Otherwise you will be notified with the denied reason.</p>    
+                <img className="wid-100 border-2 border-gray-400 rounded mb-2" src="./congrats.jpg" />        
+              </div>
+              <p className="text-lg mt-3">You'll see a confirmation pop-up - click <strong>OK</strong> to confirm</p>
             </div>
 
             <div className="bg-green-100 border-2 border-green-500 rounded-lg p-4">
@@ -225,7 +194,14 @@ export default function PortalGuide() {
             
             <div className="bg-white rounded-lg p-5 border-2 border-orange-300 mb-4">
               <p className="text-xl font-bold mb-3">After Your Loan is Accepted:</p>
-              <p className="text-lg mb-3">You'll need to sign your loan documents just like you normally would.</p>
+              <p className="text-lg mb-2">You'll need to sign your loan documents just like you normally would.</p>
+              <p className="text-lg mb-3">You will see the <strong>Sign Loan Agreement button</strong> in the reminder section.</p>
+              
+              <div>
+                <img className="wid-100 border-2 border-gray-400 rounded mb-2" src="./sign-loan.jpg" />
+                <p className="text-lg mt-4 mb-4">Click the <strong>SIGN LOAN AGREEMENT</strong> button and you will be redirected to the agreement screen.</p>    
+                </div>
+              
               <div className="bg-yellow-100 border-2 border-yellow-400 rounded p-4">
                 <p className="text-lg font-bold">⚠️ Important: Check the due date carefully!</p>
                 <p className="text-base mt-2">Make sure the payment due date is correct before signing</p>
@@ -243,7 +219,7 @@ export default function PortalGuide() {
             </div>
 
             <div className="bg-green-100 border-2 border-green-500 rounded-lg p-5">
-              <p className="text-xl font-bold mb-3 text-green-800">What Happens Next:</p>
+              <p className="text-xl font-bold mb-3">What Happens Next:</p>
               <p className="text-lg mb-2">• The Cashback Loans team gets an alert that you've signed</p>
               <p className="text-lg mb-2">• <span className="font-bold">Auto Funding (24/7):</span> If you qualify, you'll be funded instantly</p>
               <p className="text-lg">• <span className="font-bold">Regular Funding:</span> Quick review and funding within minutes during business hours</p>
@@ -267,40 +243,45 @@ export default function PortalGuide() {
             
             <div className="bg-white rounded-lg p-5 border-2 border-green-300 mb-4">
               <p className="text-xl font-bold mb-3">Step 1: Log Into Your Account</p>
-              <p className="text-lg mb-3">Under "Manage Your Loan Account", click:</p>
-              <button className="bg-green-600 text-white px-6 py-3 rounded-lg text-lg font-bold">
-                I want to make my next payment using my debit card
-              </button>
+              <p className="text-lg mb-3">Find the <strong>I want to pay my next payment using my debit card</strong> button.</p>              
+              <div>
+                <img className="wid-100 border-2 border-gray-400 rounded mb-2" src="./pay-using-debit.jpg" />
+                <p className="text-lg mt-4 mb-4">Select the option and click the <strong>submit</strong> button. You will be redirected to the payment screen.</p>   
+                <img className="wid-100 border-2 border-gray-400 rounded mb-2" src="./choose-to-pay.jpg" />
+              </div>
             </div>
 
             <div className="bg-white rounded-lg p-5 border-2 border-green-300 mb-4">
               <p className="text-xl font-bold mb-3">Step 2: Choose When to Pay</p>
               <p className="text-lg mb-3">You'll see a confirmation screen with two options:</p>
-              <div className="space-y-3">
-                <button className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-bold w-full">
-                  Proceed to Pay (Pay Now)
-                </button>
-                <button className="bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-bold w-full">
-                  Proceed to Schedule (Pay Later)
-                </button>
-              </div>
+              <img className="wid-100 border-2 border-gray-400 rounded mb-2" src="./choose-when-to-pay.jpg" />    
+                <p className="text-lg mt-4 mb-4">On clicking you will be redirected to card payment screen to enter card details.</p>            
             </div>
 
             <div className="bg-white rounded-lg p-5 border-2 border-green-300">
               <p className="text-xl font-bold mb-3">Step 3: Enter Your Card Information</p>
-              <p className="text-lg mb-3">If you chose "Schedule", you can:</p>
-              <ul className="space-y-2 text-lg ml-6">
-                <li>• Confirm your existing debit card information</li>
-                <li>• Add a new debit card</li>
-                <li>• Choose a future payment date</li>
-              </ul>
+              <p className="text-lg mb-3">If you have already <strong>saved card information</strong> you will see the below screen.</p>              
+              <img className="wid-100 border-2 border-gray-400 rounded mb-2" src="./saved-payment.jpg" />
+              <p className="text-lg mb-3">Select your card to pay.</p>            
+              <img className="wid-100 border-2 border-gray-400 rounded mb-2" src="./saved-card-pay.jpg" />
+              <p className="text-lg mb-3">If you don't have any saved card information, you will see the below screen to enter your card details.</p>  
+              <img className="wid-100 border-2 border-gray-400 rounded mb-2" src="./card-detail.jpg" />
+              <p className="text-lg mb-3">Click the <strong>Pay</strong> button. If the payment is successful, the Payment Success screen will be displayed or the return reason will be shown:</p>
               <div className="bg-blue-100 border-2 border-blue-400 rounded p-3 mt-4">
                 <p className="text-base font-semibold">🔒 Your card information is secure and encrypted</p>
               </div>
+              <img className="wid-100 border-2 border-gray-400 rounded mb-2 mt-4" src="./payment-approved.jpg" />
             </div>
 
             <div className="bg-green-100 border-2 border-green-500 rounded-lg p-4 mt-4">
               <p className="text-lg font-semibold">✓ You'll get a confirmation message when your payment is complete!</p>
+            </div>
+            <p className="text-lg mb-3 mt-4">Clicking the Go to <strong>Home</strong> button will redirect you to the home screen, where you can verify the payment status and request a new loan immediately.</p>
+            
+            <div className="bg-white rounded-lg p-5 border-2 border-green-300">
+              <p className="text-xl font-bold mb-3">Step 4: Apply For A New Loan</p>
+              <img className="wid-100 border-2 border-gray-400 rounded mb-2" src="./apply-for-new-loan.jpg" />
+              <p className="text-lg mb-3">Click the <strong>I want to Apply For A New Loan</strong>  button to apply.</p>              
             </div>
           </div>
         </div>
@@ -315,32 +296,28 @@ export default function PortalGuide() {
             <p className="text-lg mb-4">You can defer (postpone) your next payment by 1 to 5 calendar days.</p>
             
             <div className="bg-white rounded-lg p-5 border-2 border-purple-300 mb-4">
-              <p className="text-xl font-bold mb-3">Step 1: Find the Defer Option</p>
-              <p className="text-lg mb-3">Under "Manage Your Loan Account", click:</p>
-              <button className="bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-bold">
-                Defer my next payment by 1-5 Calendar Days
-              </button>
+              <p className="text-xl font-bold mb-3">Step 1: Find the <strong>Defer My Next Payment by 1 -5 Calendar Day(s)</strong> Option</p>
+              <p className="text-lg mb-3">Click the <strong>Defer My Next Payment by 1 -5 Calendar Day(s)</strong> button to select the number of days. You can select a maximum of 5 days.</p>
+              <img className="wid-100 border-2 border-gray-400 rounded mb-2" src="./defer-payment.jpg" />
+              <p className="text-lg mb-3">Click <strong>submit</strong> button you will see the below screen to confirm the deferred payment details.</p>
+              <img className="wid-100 border-2 border-gray-400 rounded mb-2" src="./defer-submit.jpg" />
+              
             </div>
 
             <div className="bg-white rounded-lg p-5 border-2 border-purple-300 mb-4">
-              <p className="text-xl font-bold mb-3">Step 2: Choose How Many Days</p>
-              <p className="text-lg mb-3">Select how many days you need (1, 2, 3, 4, or 5 days)</p>
-              <div className="bg-gray-50 border-2 border-gray-300 rounded p-3 text-lg">
-                Select number of days: ___ ▼
-              </div>
-              <button className="bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-bold mt-3">
-                Submit
-              </button>
-            </div>
-
-            <div className="bg-white rounded-lg p-5 border-2 border-purple-300 mb-4">
-              <p className="text-xl font-bold mb-3">Step 3: Confirm Your Request</p>
+              <p className="text-xl font-bold mb-3">Step 2: Confirm Your Request</p>
               <p className="text-lg mb-2">You'll get a second chance to review and confirm</p>
-              <p className="text-lg">Click "Yes" to confirm or "No" to go back</p>
+              <img className="wid-100 border-2 border-gray-400 rounded mb-2" src="./yes-to-continue.jpg" />
+              <p className="text-lg">Click yes to complete the deferment after clicking <strong>yes</strong> button you will be redirected to payment authorization agreement.</p>
+              <img className="wid-100 border-2 border-gray-400 rounded mb-2 mt-4" src="./agrement.jpg" />
+              <p className="text-lg">After <strong>successful signing</strong> you will see the below screen.</p>
+              <img className="wid-100 border-2 border-gray-400 rounded mb-2 mt-4" src="./loan-extension-approved.jpg" />
+              <p className="text-lg">click <strong>OK</strong>, you will be redirected to home screen and you able see the updated payment date on top section.</p>
+              <img className="wid-100 border-2 border-gray-400 rounded mb-2 mt-4" src="./defer-completed.jpg" />
             </div>
 
             <div className="bg-green-100 border-2 border-green-500 rounded-lg p-4">
-              <p className="text-lg font-semibold mb-2">✓ Success!</p>
+              <p className="text-lg font-bold mb-2">✓ Success!</p>
               <p className="text-base">You'll see confirmation that your payment date has been extended</p>
               <p className="text-base mt-2">Your home screen will show the new payment date</p>
             </div>
@@ -365,7 +342,7 @@ export default function PortalGuide() {
                 <Phone className="w-16 h-16 text-red-600" />
                 <div>
                   <p className="text-xl font-bold">Call Us:</p>
-                  <p className="text-3xl font-bold text-red-600">1-800-XXX-XXXX</p>
+                  <p className="text-3xl font-bold text-red-600"><a href="tel:9094830474">(909)-483-0474</a></p>
                 </div>
               </div>
               <p className="text-lg">Our team can walk you through every step on the phone</p>
@@ -377,7 +354,7 @@ export default function PortalGuide() {
                 <Mail className="w-16 h-16 text-red-600" />
                 <div>
                   <p className="text-xl font-bold">Email Us:</p>
-                  <p className="text-2xl font-bold text-red-600">support@cashbackloans.com</p>
+                  <p className="text-2xl font-bold text-red-600"><a href="mailto:info@cashbackloans.com">info@cashbackloans.com</a></p>
                 </div>
               </div>
               <p className="text-lg">We'll respond as quickly as possible</p>
@@ -386,7 +363,7 @@ export default function PortalGuide() {
             <div className="bg-green-100 border-2 border-green-500 rounded-lg p-6">
               <p className="text-xl font-bold mb-3">🌐 Website Resources</p>
               <p className="text-lg mb-3">Visit our website for more help:</p>
-              <p className="text-xl font-semibold text-blue-600">www.cashbackloans.com</p>
+              <p className="text-xl font-semibold"><a href="https://www.cashbackloans.com/" target="_blank">www.cashbackloans.com</a></p>
             </div>
           </div>
           
@@ -394,7 +371,7 @@ export default function PortalGuide() {
             <p className="text-xl font-bold mb-3">💡 Quick Tips to Remember:</p>
             <ul className="space-y-2 text-lg">
               <li>• <span className="font-bold">Keep this guide handy</span> - print it out and keep it near your computer</li>
-              <li>• <span className="font-bold">Save the login page:</span> https://my.cashbackloans.com/#/login</li>
+              <li>• <span className="font-bold">Save the login page:</span> <a href="https://my.cashbackloans.com/" target="_blank">https://my.cashbackloans.com/</a></li>
               <li>• <span className="font-bold">First time password:</span> Last 4 digits of your Social Security Number</li>
               <li>• <span className="font-bold">Write down your new password</span> and keep it in a safe place</li>
               <li>• <span className="font-bold">Never share your password</span> with anyone</li>
@@ -405,10 +382,10 @@ export default function PortalGuide() {
           <div className="bg-yellow-100 border-2 border-yellow-500 rounded-lg p-6">
             <p className="text-xl font-bold mb-3">📋 Quick Reference:</p>
             <div className="space-y-2 text-lg">
-              <p><span className="font-bold">Website:</span> www.cashbackloans.com</p>
-              <p><span className="font-bold">Login Page:</span> https://my.cashbackloans.com/#/login</p>
-              <p><span className="font-bold">Phone:</span> 1-800-XXX-XXXX</p>
-              <p><span className="font-bold">Email:</span> support@cashbackloans.com</p>
+              <p><span className="font-bold">Website:</span> <a href="https://www.cashbackloans.com/" target="_blank">www.cashbackloans.com</a></p>
+              <p><span className="font-bold">Login Page:</span> <a href="https://my.cashbackloans.com/" target="_blank">https://my.cashbackloans.com/</a></p>
+              <p><span className="font-bold">Phone:</span> <a href="tel:9094830474" className="text-green">(909)-483-0474</a></p>
+              <p><span className="font-bold">Email:</span> <a href="mailto:info@cashbackloans.com" className="text-green">info@cashbackloans.com</a></p>
             </div>
           </div>
         </div>
@@ -458,31 +435,42 @@ export default function PortalGuide() {
           </div>
         </div>
 
-        <div className="flex justify-between items-center pt-6 border-t-2 border-gray-300 print:hidden">
-          <button
-            onClick={() => setCurrentSection(Math.max(0, currentSection - 1))}
-            disabled={currentSection === 0}
-            className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold disabled:bg-gray-300 disabled:cursor-not-allowed hover:bg-blue-700"
-          >
-            <ChevronLeft className="w-6 h-6" />
-            Previous
-          </button>
-          
-          <button
-            onClick={() => setCurrentSection(Math.min(sections.length - 1, currentSection + 1))}
-            disabled={currentSection === sections.length - 1}
-            className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold disabled:bg-gray-300 disabled:cursor-not-allowed hover:bg-blue-700"
-          >
-            Next
-            <ChevronRight className="w-6 h-6" />
-          </button>
-        </div>
+        <div
+  className={`flex items-center pt-6 border-t-2 border-gray-300 print:hidden ${
+    currentSection === 0
+      ? "justify-end"
+      : currentSection === sections.length - 1
+      ? "justify-start"
+      : "justify-between"
+  }`}
+>
+  {currentSection > 0 && (
+    <button
+      onClick={() => setCurrentSection(currentSection - 1)}
+      className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700"
+    >
+      <ChevronLeft className="w-6 h-6" />
+      Previous
+    </button>
+  )}
+
+  {currentSection < sections.length - 1 && (
+    <button
+      onClick={() => setCurrentSection(currentSection + 1)}
+      className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700"
+    >
+      Next
+      <ChevronRight className="w-6 h-6" />
+    </button>
+  )}
+</div>
+
       </div>
 
       <div className="bg-yellow-100 border-2 border-yellow-500 rounded-lg p-6 text-center print:hidden">
         <p className="text-xl font-bold mb-2">Need Help Right Now?</p>
-        <p className="text-2xl font-bold text-blue-600 mb-1">Call: 1-800-XXX-XXXX</p>
-        <p className="text-lg">Email: support@cashbackloans.com</p>
+        <p className="text-2xl font-bold text-blue-600 mb-1 text-green">Call: <a href="tel:9097437800" className="text-green">(909)-743-7800</a> or <a href="tel:9094830474" className="text-green">(909)-483-0474</a></p>
+        <p className="text-lg">Email: <a href="mailto:info@cashbackloans.com">info@cashbackloans.com</a></p>
       </div>
     </div>
   );
